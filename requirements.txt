@@ -23,4 +23,3 @@ sklearn
 tb-nightly
 tensorflow
 requests
-time
