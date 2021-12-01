@@ -28,7 +28,7 @@ model1 = load_model('modelo1D_3.h5')
 
 
 
-c = p.Client(api_token='pk_ef0c5647c6e747b3bd2918d427e9308d', version='stable')
+c = p.Client(api_token='pk_546ecf90244a46178b7bcdd470174c93', version='stable')
 url = "https://es.wikipedia.org/wiki/Promedio_Industrial_Dow_Jones"
 
 r = requests.get(url)
@@ -421,4 +421,4 @@ def update_table(num_grafico, resumen_bot):
 
 
 if __name__ == '__main__':
-    app.run_server(debug=True, threaded=True)
+    app.run_server(host="0.0.0.0", debug=False, port=8080)
